@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-module
+  type="WEB"
+  name="bycsq"
+  id="myeclipse.1544068416312"
+  context-root="/bycsq"
+  j2ee-spec="1.7"
+  archive="bycsq.war">
+  <attributes>
+    <attribute name="webrootdir" value="src/main/webapp" />
+  </attributes>
+</project-module>
+

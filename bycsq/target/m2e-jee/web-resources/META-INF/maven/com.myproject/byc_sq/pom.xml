@@ -1,0 +1,48 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.myproject</groupId>
+	<artifactId>byc_sq</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
+	<name>MySpringBoot</name>
+	<url>http://maven.apache.org</url>
+
+	<!-- <properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		1.jdk版本
+		<java.version>1.7</java.version>
+	</properties> -->
+	<!--2.父节点依赖,引入后相关配置不用选择版本,spring会自动选择合适添加  -->
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.6.RELEASE</version>
+	</parent>
+
+	<!--3.springboot的web依赖  -->
+	<dependencies>
+		<!-- 支持web、tomcat特性的模块 -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+	</dependencies>
+	<!-- 插件 -->
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<!-- springboot main调试-->
+			<plugin>
+      			<groupId>org.springframework.boot</groupId>
+      			<artifactId>spring-boot-maven-plugin</artifactId>
+      		</plugin>
+		</plugins>
+	</build>
+</project>
